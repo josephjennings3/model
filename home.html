@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Ishimoto</title>
+		<link rel="stylesheet" type="text/css" href="css/model.css" />
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery/cycle.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	</head>
+	<body>
+		<div id="pill">
+			<div id="pilltext">
+				<p class="create"><a href="http://josephjennings3.com/">Back to Home</a></p>
+			</div>
+		</div>
+		<div id="topcontainer">		
+			<div class="menushade">			
+			    <div class="mobilemenu">
+			    	<p>Menu</p>
+		    		<ul>
+		    			<li><a href="home.html">Latest</a></li>
+		    			<li><a href="lifestyle.html">Lifestyle/Travel</a></li>
+		    			<li><a href="about.html">About</a></li>
+		    			<li><a href="ishimotoblog.html">Blog</a></li>
+		    		</ul>
+			    </div>	
+				<div id="header">
+					<h1>Ishimoto</h1>				
+					<ul class="headerlist">
+						<li><a href="home.html">Latest</a></li>
+						<li><a href="lifestyle.html">Lifestyle/Travel</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="ishimotoblog.html">Blog</a></li>
+					</ul>	
+				</div>		
+			</div>	
+		</div>
+		<div id="maincontainer">
+			<div class="mobilegallery">				
+				<img src="img/model1.jpg" width="320" height="600" />
+	            <img src="img/model2.jpg" width="320" height="350" />
+	            <img src="img/model3.jpg" width="320" height="600" />        
+	            <img src="img/model4.jpg" width="320" height="600" />
+	            <img src="img/model5.jpg" width="320" height="600" />
+	            <img src="img/model6.jpg" width="320" height="600" />		         
+	            <img src="img/model7.jpg" width="320" height="350" />
+	            <img src="img/model8.jpg" width="320" height="600" />
+	            <img src="img/model9.jpg" width="320" height="600" />
+	            <img src="img/model10.jpg" width="320" height="350" />
+		    </div>	
+	        <div id="container">
+				<div class="gallery">
+					<div class="group">
+		          	 	<img src="img/model1.jpg" width="400" />
+		           	 	<img src="img/model2.jpg" width="600" height="600" />		           	
+		           		<img src="img/model3.jpg" width="400" />
+		           	</div>
+		           	<div class="group">
+		           		<img src="img/model4.jpg" width="466" />
+		           		<img src="img/model5.jpg" width="466" />
+		            	<img src="img/model6.jpg" width="466" />
+		            </div>
+		            <div class="group">
+		            	<img src="img/model7.jpg" width="1000" height="600" />
+		            	<img src="img/model8.jpg" width="400" />
+		            </div>
+		            <div class="group">
+		            	<img src="img/model9.jpg" width="400" />
+		            	<img src="img/model10.jpg" width="1000" height="600" />
+		            </div>
+		        	
+		    	</div>	 
+		    </div>  
+		    <div id="footer">
+		    	<div class="footerwrapper">
+		    		<div class="backtotop">
+				    	<a href="#">Back to Top</a>
+				    </div>
+			    	<div class="rightfooter">			    	
+		    			email:&nbsp;
+		    			<a href="mailto:jajenningsiii@gmail.com">Jajenningsiii@gmail.com</a>
+		    			<br>
+			    		phone: (555) 555-5555		    	
+			    	</div>
+			    	<div class="icons">
+				    	<a href="http://www.facebook.com"><img src="img/fb.jpg" alt="Facebook Icon"></a>
+				    	<a href="http://www.twitter.com"><img src="img/twitter.jpg"></a>
+				    	<a href="http://pinterest.com"><img src="img/pinterest.jpg"></a>
+			    	</div>
+			    </div>
+		    </div>
+		</div>
+    </body>
+</html>
+
+<script>
+	
+	$('.gallery').cycle({
+		fx: 'scrollLeft',
+		speed: 4000,
+		timeout: 1000,
+		next: '.gallery',
+	});
+
+	$('.mobilemenu p')
+		.css({
+			cursor: "pointer"
+		})
+		.on('click', function() {
+		var txt= $(this).text() == "CLOSE" ? "MENU" : "CLOSE";
+		$(this).text(txt);
+		$(this).next('ul').toggle();
+		})
+</script>
+

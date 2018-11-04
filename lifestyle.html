@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lifestyle/Travel</title>
+		<link rel="stylesheet" type="text/css" href="css/model.css" />
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery/cycle.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="pill">
+			<div id="pilltext">
+				<p class="create"><a href="http://josephjennings3.com/">Back to Home</a></p>
+			</div>
+		</div>
+		<div id="topcontainer">
+			<div class="menushade">
+				<div class="mobilemenu">
+					<p>Menu</p>
+					<ul>
+						<li><a href="home.html">Latest</a></li>
+						<li><a href="lifestyle.html">Lifestyle/Travel</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="ishimotoblog.html">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="header">
+				<h1>Ishimoto</h1>
+				<ul class="headerlist">
+					<li><a href="home.html">Latest</a></li>
+					<li><a href="lifestyle.html">Lifestyle/Travel</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="ishimotoblog.html">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="maincontainer">
+			<div class="mobilegallery">
+				<img src="img/lifestyle1.jpg" width="320" height="300" />
+				<img src="img/lifestyle2.jpg" width="320" height="300" />
+				<img src="img/lifestyle3.jpg" width="320" height="300" />
+				<img src="img/lifestyle4.jpg" width="320" height="300" />
+				<img src="img/lifestyle5.jpg" width="320" height="300" />
+				<img src="img/lifestyle6.jpg" width="320" height="300" />
+				<img src="img/lifestyle7.jpg" width="320" height="300" />
+				<img src="img/lifestyle8.jpg" width="320" height="300" />
+				<img src="img/lifestyle9.jpg" width="320" height="300" />
+			</div>		
+			<div class="container">
+				<div class="gallery">
+					<div class="group">
+						<img src="img/lifestyle1.jpg" height="600" width="650" />
+						<img src="img/lifestyle2.jpg" height="600" width="650" />
+					</div>
+					<div class="group">
+						<img src="img/lifestyle3.jpg" height="600" width="650" />	
+						<img src="img/lifestyle4.jpg" height="600" width="650" />
+					</div>
+					<div class="group">
+						<img src="img/lifestyle5.jpg" height="600" width="650" />
+						<img src="img/lifestyle6.jpg" height="600" width="650" />
+					</div>
+					<div class="group">
+						<img src="img/lifestyle7.jpg" height="600" width="430" />
+						<img src="img/lifestyle8.jpg" height="600" width="430" />
+						<img src="img/lifestyle9.jpg" height="600" width="430" />
+					</div>
+				</div>
+			</div>			
+			<div id="footer">
+				<div class="footerwrapper">
+					<div class="backtotop">
+						<a href="#">Back To Top</a>
+					</div>
+					<div class="rightfooter">
+						email:&nbsp;<a href="mailto:jajenningsiii@gmail.com">JajenningsIII@gmail.com</a><br>
+						phone: (555)675-7352
+					</div>
+					<div class="icons">
+						<a href="http://www.facebook.com"><img src="img/fb.jpg" alt="Facebook Icon"></a>
+						<a href="http://www.twitter.com"><img src="img/twitter.jpg" alt="Twitter Icon"></a>
+						<a href="http://www.pinterest.com"><img src="img/pinterest.jpg" alt="Pinterest Icon"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	$('.gallery').cycle({
+		fx: 'scrollLeft',
+		speed: 4000,
+		timeout: 1000,
+		next: '.gallery',
+	});
+
+	$('.mobilemenu p')
+		.css({
+			cursor: "pointer"
+		})
+		.on('click', function() {
+		var txt= $(this).text() == "CLOSE" ? "MENU" : "CLOSE";
+		$(this).text(txt);
+		$(this).next('ul').toggle();
+		})
+</script>

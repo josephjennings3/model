@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About</title>
+		<link rel="stylesheet" type="text/css" href="css/model.css">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="pill">
+			<div id="pilltext">
+				<p class="create"><a href="http://josephjennings3.com/">Back to Home</a></p>
+			</div>
+		</div>
+		<div id="topcontainer">
+			<div class="menushade">
+				<div class="mobilemenu">
+					<p>Menu</p>
+					<ul>
+						<li><a href="home.html">Latest</a></li>
+						<li><a href="lifestyle.html">Lifestyle/Travel</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="ishimotoblog.html">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="header">
+				<h1>Ishimoto</h1>
+				<ul class="headerlist">
+					<li><a href="home.html">Latest</a></li>
+					<li><a href="lifestyle.html">Lifestyle/Travel</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="ishimotoblog.html">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="maincontainer">
+			<div class="aboutcontainer">
+				<div id="leftimg">
+					<img src="img/aboutimg.jpg" alt="Man with Camera" class="cameraman">
+				</div>
+				<div id="righttext">
+					<div class="toptext">
+						<h2>Jon Ishimoto</h2>
+						<p>Jon Ishimoto is a fictitious photographer with a knack for looking totally legit. He puts the 'hip' in hipster and the 'wanna' in wannabe. <br>
+
+						Unless otherwise noted, the images on this site were taken by the greatly talented and always humble<strong> <a href="http://www.collin-hughes.com/home">Colin Hughes</a></strong>. The images in the landing portfolio were taken for London-based fashion illustrator and womenswear designer<strong> <a href="http://cargocollective.com/evelinaromano">Evelina Romano</a></strong> to showcase pieces from her AW 12/13 line. </p>
+					</div>
+					<div class="bottext">
+						<h2>Awards</h2>
+							<p>
+								Featured In Standout Magazine's Top 50 <br>Photographers of 2010<br>
+								Winner of the James Frank Competition, 2008 <br>
+								Japan Photo of the Year winner, 1999 <br>
+							</p>
+						<h2>Representation</h2>
+							<p>
+								Frontrow Management
+							</p>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+			<div class="footerwrapper">
+		    		<div class="backtotop">
+				    	<a href="#">Back to Top</a>
+				    </div>
+			    	<div class="rightfooter">			    	
+		    			email:&nbsp;
+		    			<a href="mailto:jajenningsiii@gmail.com">Jajenningsiii@gmail.com</a>
+		    			<br>
+			    		phone: (555) 555-5555		    	
+			    	</div>
+			    	<div class="icons">
+				    	<a href="http://www.facebook.com"><img src="img/fb.jpg" alt="Facebook Icon"></a>
+				    	<a href="http://www.twitter.com"><img src="img/twitter.jpg"></a>
+				    	<a href="http://pinterest.com"><img src="img/pinterest.jpg"></a>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	$('.mobilemenu p')
+		.css({
+			cursor: "pointer"
+		})
+		.on('click', function() {
+			var txt= $(this).text() == "CLOSE" ? "MENU" : "CLOSE";
+			$(this).text(txt);
+			$(this).next('ul').toggle();
+		})
+</script>

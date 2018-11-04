@@ -1,0 +1,408 @@
+html, body{
+	margin: 0;
+	padding:0;
+	height: 100%;
+	font-family: 'Yanone Kaffeesatz', 'sans-serif';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.6em;
+	letter-spacing: 0px;
+	font-style: normal;
+	font-size: 15px;
+	min-height: 100%;
+	background-color: #fff;
+	color: #444;
+}
+
+h1{
+	font-family: 'Oswald', 'sans-serif';
+	position: relative;
+	left: 10%;
+}
+
+ul{
+	list-style-type: none;
+}
+
+
+
+/*----------------Pill------------------*/
+
+#pill{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background: #222;
+	border-radius: 30px;
+	cursor: pointer;
+	font-family: 'Yanone Kaffeesatz', 'sans-serif';
+	letter-spacing: normal;
+	width: 207px;
+	height: 52px;
+	line-height: normal;
+	white-space: nowrap;
+	text-align: left !important;
+	z-index: 100;
+	font-size: 16px;
+}
+
+#pilltext{
+	color: #fff;
+	position: relative;
+	left: 57px;
+	top: -7px;
+	font-size: 20px;
+}
+
+#pilltext a{
+	color: #fff;
+}
+
+/*------------Header----------*/
+
+#topcontainer{
+	position: relative;
+	top: 0px;
+}
+
+
+#header{
+	margin: 0 auto;
+	max-width: 1100px;
+	position: relative;
+	padding: 30px 30px;
+	letter-spacing: 1px;
+}
+
+#header h1{
+	left: 7px;
+	bottom: 10px;
+}
+
+.headerlist{
+	position: relative;
+	float: right;
+	right: -14px;
+	top: -62px;
+	width: 30%;
+}
+
+.headerlist li{
+	display: inline-block;
+	padding-right: 30px;
+}
+
+a{
+	text-decoration: none;
+	color: #444;
+}
+
+.headerlist li a:hover{
+	color: #222;
+}
+
+.mobilemenu{
+	display: none;
+}
+
+.mobilegallery{
+	display: none;
+}
+
+#maincontainer{
+	height: 100%;
+}
+
+#blogcontainer{
+	height: 500px;
+}
+
+/*-------Gallery--------------*/
+
+.gallery{
+	width: 11000px;
+	height: 585px;
+	background: rgba(153, 153, 153, 0.1);
+	
+}
+
+#container{
+	width: 100%;
+}
+
+.group{
+	width: 100%;
+}
+
+
+/*----------Footer---------*/
+
+#footer{
+	width: 100%;
+	height: 190px;
+	position: relative;
+	bottom: 0px;
+	left: 0;
+	display: block;
+}
+
+#footer{
+	clear: both;
+}
+
+.footerwrapper{
+	position: relative;
+	bottom: 0px;
+}
+
+.backtotop{
+	display: none;
+}
+
+.icons img{
+	height: 20px;
+	width: 20px;
+}
+
+.rightfooter{
+	position: relative;
+	float: right;
+	bottom: 10%;
+	font-size: 20px;
+}
+
+.icons{
+	position: relative;
+	left: 10%;
+	top: 24px;
+}
+
+.number{
+	float: left;
+
+}
+
+/*----------About------------------*/
+
+.aboutcontainer{
+	position: relative;
+	top: 45px;
+	height: 600px;
+}
+
+#leftimg{
+	display: inline-block;
+	position: absolute;
+	float: left;
+	left: 8%;
+	min-width: 200px;
+	height: 533px;
+	width: 554px;
+}
+
+#righttext{
+	display: inline-block;
+	position: absolute;
+	float: right;
+	width: 40%;
+	font-size: 18px;
+	top: -25px;
+	left: 630px;
+	min-width: 200px;
+}
+
+
+
+
+
+/*----------Blog----------------*/
+
+#maincontainer-blog{
+	height: 1150px;
+}
+
+#blogleft{
+	float: left;
+	display: inline-block;
+	width: 600px;
+	margin-left: 95px;
+	margin-right: 70px;
+	font-size: 18px;
+	
+}
+
+#blogright{
+	display: inline-block;
+	width: 315px;
+	position: relative;
+	left: 155px;
+	font-size: 18px;
+	float: left;
+}
+
+.galleryblog{
+	width: 755px;
+	height: 503px;
+	background: rgba(153, 153, 153, 0.1);
+	overflow: hidden;
+}
+
+.blogentry h3{
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.blogentry h4{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+/*-----------Mobile-----------------*/
+
+@media screen and (max-width: 320px){
+	body{
+		font-size: 37px;
+		width: 320px;
+	}	
+
+	#pill{
+		display: none;
+	}
+
+	.menushade{
+		background-color: rgb(225,221,221);
+		width: 100%;
+	}
+
+	.mobilemenu{
+		display: initial;
+		position: relative;
+		left: 110px;
+	}
+
+	.mobilemenu ul{
+		position: relative;
+		right: 145px;
+		text-align: center;
+	}
+
+	.mobilemenu ul{
+		display: none;
+	}
+	
+	.mobilegallery{
+		display: initial;
+	}
+
+	.headerlist{
+		float: left;
+	}
+
+	#header ul{
+		display: none;
+	}
+
+	.gallery{
+		display: none;
+	}	
+
+	.backtotop{
+		display: block;
+		position: relative;
+		bottom: 30px;
+		right: 30px;
+		font-size: 25px;
+	}
+
+	.footerwrapper{
+		position: relative;
+		left: 133px;
+		top: 20px;
+	}
+
+	#footer .icons{
+		left: -21px;
+		top: 10px;
+	}
+
+
+	.rightfooter{
+		display: block;
+		text-align: center;
+		position: relative;
+		right: 200px;
+		bottom: 40px;
+		line-height: 1em;
+	}
+
+
+
+	/*---------------Lifestyle Mobile------------*/
+	.backtotop-lifestyle{
+		display: block;
+		position: relative;
+		right: 30px;
+
+	}
+
+	/*-----------------About Mobile-------------------*/
+	#leftimg{
+		left: 38px;
+		width: 320px;
+	}
+
+	#righttext{
+		position: absolute;
+		width: 290px;
+		left: 38px;
+		top: 310px;
+		line-height: 140%;
+	}
+
+	.cameraman{
+		width: 290px;
+	}
+
+	.aboutcontainer{
+		height: 965px;
+	}
+
+	
+
+	/*------------Blog--------------*/
+	.galleryblog{
+		width: 300px;
+		height: 350px;
+	}
+
+	.galleryblog img{
+		width: 300px;
+		height: 350px;
+	}
+
+	#blogleft{
+		line-height: 1.5em;
+		width: 300px;
+		margin-left: 20px;
+	}
+	
+	#blogright{
+		display: none;
+	}
+
+	#footer-blog{
+		position: relative;
+		top: 0px;
+	}
+
+	.rightfooter-blog{
+		text-align: center;
+		right: 190px;
+		bottom: 45px;
+		line-height: 1.5em;
+	}
+
+	.footerwrapper .icons{
+		left: -19px;
+		top: 2px;
+	}
